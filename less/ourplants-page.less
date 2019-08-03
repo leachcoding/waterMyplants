@@ -1,0 +1,291 @@
+.ourplantsbody {
+  background: #7ec3b0;
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0.5rem 0rem 0rem 0rem;
+  height: 500vh;
+  .ourplantsbody-document1 {
+    display: flex;
+    width: 100%;
+    height: 20%;
+    border: 1px solid black;
+    .ourplantsbody-document1-left {
+      display: flex;
+      flex: 7;
+      margin: 1rem 0rem 1rem 0rem;
+      height: 100%;
+    }
+    .ourplantsbody-document1-right {
+      display: flex;
+      flex-direction: column;
+      flex: 6;
+      h1 {
+        font-size: 4rem;
+      }
+      p {
+        flex: 1;
+        transition:
+        font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+        flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+        background 0.2s;
+
+        overflow: hidden;
+      }
+      /* Flex Items */
+      .panel > * {
+        margin: 0;
+        width: 100%;
+        transition: transform 0.5s;
+        flex: 1 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .panel.open {
+        flex: 7;
+        font-size: 40px;
+      }
+    }
+  }
+  .ourplantsbody-document2 {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    border: 1px solid black;
+    margin: 1rem 0rem 1rem 0rem;
+    .ourplantsbody-document2-left {
+      display: flex;
+      flex-direction: column;
+      flex: 7;
+      .ourplantsbody-document2-left-upper {
+        display: flex;
+        flex: 1
+      }
+      .ourplantsbody-document2-left-middle {
+        display: flex;
+        flex: 1
+      }
+      .ourplantsbody-document2-left-lower {
+        display: flex;
+        flex: 1
+      }
+    }
+    .ourplantsbody-document2-right {
+      display: flex;
+      flex-direction: column;
+      flex: 6;
+      h1 {
+        display: flex;
+        flex: 1;
+      }
+      img {
+        display: flex;
+        flex: 4;
+      }
+    }
+  }
+  .ourplantsbody-document3 {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    border: 1px solid black;
+    margin: 1rem 0rem 1rem 0rem;
+    .ourplantsbody-document3-left {
+      display: flex;
+      flex: 7;
+      .ourplantsbody-document3-left-img {
+        display: flex;
+        flex: 3;
+      }
+      .ourplantsbody-document3-left-text {
+        display: flex;
+        flex-direction: column;
+        flex: 5;
+      }
+    }
+    .ourplantsbody-document3-right {
+      display: flex;
+      flex-direction: column;
+      flex: 4;
+      .ourplantsbody-document3-right-upper {
+        display: flex;
+        width: 100%;
+        height: 33%;
+        .ourplantsbody-document3-right-upper-left {
+          width: 50%;
+          height: 100%;
+          border-radius: 1rem;
+          background: repeating-linear-gradient(
+            -45deg,
+            #E27D60,
+            #E27D60 10px,
+            #E8A87C 10px,
+            #E8A87C 20px,
+            );
+
+          transition: background 2s;
+          -webkit-transition: background 2s;
+        }
+        .ourplantsbody-document3-right-upper-left:hover {
+          background: repeating-linear-gradient(
+            45deg,
+            #E27D60,
+            #E27D60 10px,
+            #E8A87C 10px,
+            #E8A87C 20px,
+            );
+        }
+        .ourplantsbody-document3-right-upper-right {
+          width: 50%;
+          height: 100%;
+          border-radius: 1rem;
+          background: repeating-linear-gradient(
+            45deg,
+            #E27D60,
+            #E27D60 10px,
+            #E8A87C 10px,
+            #E8A87C 20px,
+            );
+            transition: background 2s;
+            -webkit-transition: background 2s;
+          }
+          .ourplantsbody-document3-right-upper-right:hover {
+            background: repeating-linear-gradient(
+              -45deg,
+              #E27D60,
+              #E27D60 10px,
+              #E8A87C 10px,
+              #E8A87C 20px,
+              );
+          }
+      }
+      .ourplantsbody-document3-right-middle {
+        display: flex;
+        width: 100%;
+        height: 33%;
+        .ourplantsbody-document3-right-lower-left {
+          width: 50%;
+          height: 100%;
+          border-radius: 1rem;
+          background: repeating-linear-gradient(
+            45deg,
+            #E27D60,
+            #E27D60 10px,
+            #E8A87C 10px,
+            #E8A87C 20px,
+            );
+
+          transition: background 2s;
+          -webkit-transition: background 2s;
+        }
+        .ourplantsbody-document3-right-lower-left:hover {
+          background: repeating-linear-gradient(
+            -45deg,
+            #E27D60,
+            #E27D60 10px,
+            #E8A87C 10px,
+            #E8A87C 20px,
+            );
+        }
+        .ourplantsbody-document3-right-lower-right {
+          width: 50%;
+          height: 100%;
+          border-radius: 1rem;
+          background: repeating-linear-gradient(
+            -45deg,
+            #E27D60,
+            #E27D60 10px,
+            #E8A87C 10px,
+            #E8A87C 20px,
+            );
+            transition: background 2s;
+            -webkit-transition: background 2s;
+          }
+          .ourplantsbody-document3-right-lower-right:hover {
+            background: repeating-linear-gradient(
+              45deg,
+              #E27D60,
+              #E27D60 10px,
+              #E8A87C 10px,
+              #E8A87C 20px,
+              );
+          }
+      }
+      .ourplantsbody-document3-right-lower {
+        display: flex;
+        width: 100%;
+        height: 33%;
+        .ourplantsbody-document3-right-lower-left {
+          display: flex;
+          flex-direction: column;
+        }
+        .ourplantsbody-document3-right-lower-middle {
+          display: flex;
+          flex-direction: column;
+        }
+        .ourplantsbody-document3-right-lower-right {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+  .ourplantsbody-document4 {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    border: 1px solid black;
+    margin: 1rem 0rem 1rem 0rem;
+    .ourplantsbody-document4-left {
+      display: flex;
+      flex: 1;
+    }
+    .ourplantsbody-document4-middle {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      height: 100%;
+      .ourplantsbody-document4-middle-lower {
+        display: flex;
+        height: 33%;
+        .ourplantsbody-document4-middle-lower-left {
+          display: flex;
+          flex-direction: column;
+        }
+        .ourplantsbody-document4-middle-lower-middle {
+          display: flex;
+          flex-direction: column;
+        }
+        .ourplantsbody-document4-middle-lower-right {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+    .ourplantsbody-document4-right {
+      display: flex;
+      flex: 1;
+    }
+  }
+  .ourplantsbody-document5 {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    border: 1px solid black;
+    margin: 1rem 0rem 1rem 0rem;
+    .ourplantsbody-document5-right {
+      display: flex;
+      flex-direction: column;
+      .ourplantsbody-document5-right-upper {
+        display: flex;
+      }
+      .ourplantsbody-document5-right-upper {
+        display: flex;
+      }
+    }
+  }
+}

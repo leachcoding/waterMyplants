@@ -1,0 +1,67 @@
+.contactbody {
+  width: 100%;
+  height: 100vh;
+  margin-top: 4rem;
+  background: #7ec3b0;
+  color: white;
+  font-size: 3.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image:
+        /* Top jagged */
+        linear-gradient(135deg, white 0%, white 50%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%),
+        linear-gradient(-135deg, white 0%, white 50%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%),
+        /* Bottom jagged */
+        linear-gradient(45deg, white 0%, white 50%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%),
+        linear-gradient(-45deg, white 0%, white 50%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%),
+        /* Top and bottom fade  */
+        linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%),
+        linear-gradient(to top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+    background-position:
+        /* Top jagged */
+        top center, top center,
+        /* Bottom jagged */
+        bottom center, bottom center,
+        /* Top fade */
+        top center,
+        /* Bottom fade */
+        bottom center;
+    background-size:
+        /* Top + bottom jagged */
+        2.5rem 2.5rem, 2.5rem 2.5rem, 2.5rem 2.5rem, 2.5rem 2.5rem,
+        /* Top + bottom fade */
+        100% 1rem, 100% 1rem;
+    background-repeat: repeat-x;
+  h2 {
+    margin: 1rem 0rem 0rem 0rem;
+    font-size: 3.25rem;
+    color: #E8A87C;
+    text-shadow: 2px 2px #5A3226;
+  }
+  p {
+    margin: 1rem 2rem 1rem 2rem;
+    line-height: 1.10;
+  }
+  form {
+    width: 100%;
+    text-align: center;
+    h3 {
+      color: #E8A87C;
+      text-shadow: 2px 2px #5A3226;
+    }
+    input, textarea {
+      margin: 1rem 0rem 0rem 0rem;
+      width: 45%;
+      height: 5vh;
+      border-radius: 2.5rem;
+      text-align: center;
+      background: white;
+      color: #E8A87C;
+      @media @mobile {
+        width: 75%;
+      }
+    }
+  }
+}
